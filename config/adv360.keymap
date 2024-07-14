@@ -7,9 +7,9 @@
 #define DEFAULT_LAYER 0
 #define FN_LAYER 1
 #define KEYPAD 2
-#define MOD_LAYER 3
-#define MACRO_LAYER 4
-#define DVORAK_LAYER 5
+#define DVORAK_LAYER 3
+#define DVORAK_FN 4
+#define MOD_LAYER 5
 
 / {
     behaviors {
@@ -201,37 +201,37 @@ acaret: at_caret {
 
         // 3
 
-        mod {
-            bindings = <
-&none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                &trans                 &none &none      &none      &none &none &none
-&none &none        &none        &none        &none        &none        &bootloader                                                          &bootloader            &none &none      &none      &none &none &none
-&none &none        &none        &none        &none        &none        &none             &none &none  &bt BT_CLR &none                      &rgb_ug RGB_MEFS_CMD 5 &none &none      &none      &none &none &none
-&none &none        &none        &none        &macro_ver   &none                                &none  &none                                                        &none &none      &none      &none &none &none
-&none &none        &none        &to 0        &to 4                                 &none &none &none  &none      &bl BL_TOG &rgb_ug RGB_TOG                              &bl BL_DEC &bl BL_INC &none &none &none
-            >;
-        };
-
-        // 4
-
         dvorak_layer {
           bindings = <
-&ppipe    &pkp_n1  &lkp_n2   &lkp_n3  &lkp_n4   &akp_n5 &tog KEYPAD                                                                            &mo MOD_LAYER     &ekp_n6 &rkp_n7  &rkp_n8 &rkp_n9  &skp_n0 &eprcnt
-&kp TAB   &kp SEMI &kp COMMA &kp DOT  &kp P     &kp Y   &kp LG(LC(LEFT))                                                                       &kp LG(LC(RIGHT)) &kp F   &kp G    &kp C   &kp R    &kp L   &bhash
-&kp ESC   &kp A    &kp O     &kp E    &kp U     &kp I   &kp LG(LS(LEFT))          &kp LCTRL &kp LALT          &kp LGUI     &kp RCTRL           &kp LG(LS(RIGHT)) &kp D   &kp H    &kp T   &kp N    &kp S   &kp MINUS
-&kp LSHFT &kp APOS &kp Q     &kp J    &kp K     &kp X                                       &kp LA(LCTRL)     &kp LA(LSFT)                                       &kp B   &kp M    &kp W   &kp V    &kp Z   &kp RSHFT
-&to 5     &dgrave  &ggrave   &kp LEFT &kp RIGHT                          &kp BSPC &kp DEL   &kp LA(LC(LSFT))  &kp LC(LSFT) &kp ENTER &kp SPACE                           &kp DOWN &kp UP  &kp FSLH &acaret &to 5
+&ppipe        &pkp_n1  &lkp_n2   &lkp_n3  &lkp_n4   &akp_n5 &tog KEYPAD                                                                            &mo MOD_LAYER     &ekp_n6 &rkp_n7  &rkp_n8 &rkp_n9  &skp_n0 &eprcnt
+&kp TAB       &kp SEMI &kp COMMA &kp DOT  &kp P     &kp Y   &kp LG(LC(LEFT))                                                                       &kp LG(LC(RIGHT)) &kp F   &kp G    &kp C   &kp R    &kp L   &bhash
+&kp ESC       &kp A    &kp O     &kp E    &kp U     &kp I   &kp LG(LS(LEFT))          &kp LCTRL &kp LALT          &kp LGUI     &kp RCTRL           &kp LG(LS(RIGHT)) &kp D   &kp H    &kp T   &kp N    &kp S   &kp MINUS
+&kp LSHFT     &kp APOS &kp Q     &kp J    &kp K     &kp X                                       &kp LA(LCTRL)     &kp LA(LSFT)                                       &kp B   &kp M    &kp W   &kp V    &kp Z   &kp RSHFT
+&to DVORAK_FN &dgrave  &ggrave   &kp LEFT &kp RIGHT                          &kp BSPC &kp DEL   &kp LA(LC(LSFT))  &kp LC(LSFT) &kp ENTER &kp SPACE                           &kp DOWN &kp UP  &kp FSLH &acaret &to DVORAK_FN
             >;
         };
 
-            // 5
+            // 4
 
         dvorak_fn {
             bindings = <
-&kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog KEYPAD                                              &mo MOD_LAYER &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-&trans &trans &trans &trans &trans &trans &trans                                                   &trans        &trans &trans &trans &trans  &trans  &trans
-&trans &trans &trans &trans &trans &trans &trans             &trans &trans  &trans &kp LALT        &trans        &trans &trans &trans &trans  &trans  &trans
-&trans &trans &trans &trans &trans &trans                           &trans  &trans                               &trans &trans &trans &trans  &trans  &trans
-&to 4  &trans &trans &trans &trans                    &trans &trans &trans  &trans &trans   &trans                      &trans &trans &trans  &trans  &to 4
+&kp F1           &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog KEYPAD                                              &mo MOD_LAYER &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+&trans           &trans &trans &trans &trans &trans &trans                                                   &trans        &trans &trans &trans &trans  &trans  &trans
+&trans           &trans &trans &trans &trans &trans &trans             &trans &trans  &trans &kp LALT        &trans        &trans &trans &trans &trans  &trans  &trans
+&trans           &trans &trans &trans &trans &trans                           &trans  &trans                               &trans &trans &trans &trans  &trans  &trans
+&to DVORAK_LAYER &trans &trans &trans &trans                    &trans &trans &trans  &trans &trans   &trans                      &trans &trans &trans  &trans  &to DVORAK_LAYER
+            >;
+        };
+
+        // 5
+
+        mod {
+            bindings = <
+&none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2      &bt BT_SEL 3     &bt BT_SEL 4 &none                                                                &trans                 &none &none      &none      &none &none &none
+&none &none        &none        &none             &none            &none        &bootloader                                                          &bootloader            &none &none      &none      &none &none &none
+&none &none        &none        &none             &none            &none        &none             &none &none  &bt BT_CLR &none                      &rgb_ug RGB_MEFS_CMD 5 &none &none      &none      &none &none &none
+&none &none        &none        &none             &macro_ver       &none                                &none  &none                                                        &none &none      &none      &none &none &none
+&none &none        &none        &to DEFAULT_LAYER &to DVORAK_LAYER                          &none &none &none  &none      &bl BL_TOG &rgb_ug RGB_TOG                              &bl BL_DEC &bl BL_INC &none &none &none
             >;
         };
 
