@@ -6,9 +6,9 @@
 
 #define DEFAULT_LAYER 0
 #define FN_LAYER 1
-#define KEYPAD 2
-#define DVORAK_LAYER 3
-#define DVORAK_FN 4
+#define DVORAK_LAYER 2
+#define DVORAK_FN 3
+#define KEYPAD 4
 #define MOD_LAYER 5
 
 / {
@@ -199,18 +199,6 @@ acaret: at_caret {
 
         // 2
 
-        keypad-game {
-            bindings = <
-&kp F1 &kp N5    &kp N1   &kp N2   &kp N3   &kp N4 &trans                                                    &mo MOD_LAYER &kp SLCK &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
-&kp F2 &kp TAB   &kp Q    &kp W    &kp E    &kp R  &kp T                                                     &none         &kp Y    &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
-&kp F3 &kp LSHFT &kp A    &kp S    &kp D    &kp F  &kp G            &trans   &trans  &trans &trans           &none         &kp H    &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
-&kp F4 &kp LCTRL &kp Z    &kp X    &kp C    &kp B                            &trans  &trans                                &kp N    &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
-&kp F5 &kp GRAVE &kp CAPS &kp LEFT &kp LALT               &kp SPACE &kp BSPC &trans  &trans &trans &kp KP_N0                        &kp DOWN   &kp UP       &kp KP_DOT    &kp RBKT        &trans
-            >;
-        };
-
-        // 3
-
         dvorak_layer {
           bindings = <
 &ppipe        &pkp_n1  &lkp_n2   &lkp_n3  &lkp_n4   &akp_n5 &tog KEYPAD                                                                            &mo MOD_LAYER     &ekp_n6 &rkp_n7  &rkp_n8 &rkp_n9  &skp_n0 &eprcnt
@@ -221,7 +209,7 @@ acaret: at_caret {
             >;
         };
 
-            // 4
+            // 3
 
         dvorak_fn {
             bindings = <
@@ -230,6 +218,18 @@ acaret: at_caret {
 &trans           &trans &trans &trans &trans &trans &trans             &trans &trans  &trans &kp LALT        &trans        &trans &trans &trans &trans  &trans  &trans
 &trans           &trans &trans &trans &trans &trans                           &trans  &trans                               &trans &trans &trans &trans  &trans  &trans
 &to DVORAK_LAYER &trans &trans &trans &trans                    &trans &trans &trans  &trans &trans   &trans                      &trans &trans &trans  &trans  &to DVORAK_LAYER
+            >;
+        };
+
+        // 4
+
+        keypad-game {
+            bindings = <
+&kp F1 &kp N5    &kp N1   &kp N2   &kp N3   &kp N4 &kp N5                                                    &mo MOD_LAYER &kp SLCK &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
+&kp F2 &kp TAB   &kp Q    &kp W    &kp E    &kp R  &kp T                                                     &none         &kp Y    &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_MINUS    &kp BSLH
+&kp F3 &kp LSHFT &kp A    &kp S    &kp D    &kp F  &kp G            &trans   &trans  &trans &trans           &none         &kp H    &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp KP_PLUS     &kp SQT
+&kp F4 &kp LCTRL &kp Z    &kp X    &kp C    &kp B                            &trans  &trans                                &kp N    &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp KP_ENTER    &kp RSHFT
+&kp F5 &kp GRAVE &kp CAPS &kp LEFT &kp LALT               &kp SPACE &kp BSPC &trans  &trans &trans &kp KP_N0                        &kp DOWN   &kp UP       &kp KP_DOT    &kp RBKT        &tog KEYPAD
             >;
         };
 
