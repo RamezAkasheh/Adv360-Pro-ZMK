@@ -230,11 +230,11 @@ rsftcaps: rsft_caps {
 
         dvorak_fn {
             bindings = <
-&kp F1           &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog KEYPAD                                              &mo MOD_LAYER &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-&trans           &trans &trans &trans &trans &trans &trans                                                   &trans        &trans &trans &trans &trans  &trans  &trans
-&trans           &trans &trans &trans &trans &trans &trans             &trans &trans  &trans &kp LALT        &trans        &trans &trans &trans &trans  &trans  &trans
-&trans           &trans &trans &trans &trans &trans                           &trans  &trans                               &trans &trans &trans &trans  &trans  &trans
-&to DVORAK_LAYER &trans &trans &trans &trans                    &trans &trans &trans  &trans &trans   &trans                      &trans &trans &trans  &trans  &to DVORAK_LAYER
+&kp F1           &kp F2   &kp F3    &kp F4   &kp F5    &kp F6  &tog KEYPAD                                                                            &mo MOD_LAYER     &kp F7  &kp F8   &kp F9  &kp F10  &kp F11 &kp F12
+&kp TAB          &kp SEMI &kp COMMA &kp DOT  &kp P     &kp Y   &kp LG(LC(LEFT))                                                                       &kp LG(LC(RIGHT)) &kp F   &kp G    &kp C   &kp R    &kp L   &bhash
+&kp ESC          &kp A    &kp O     &kp E    &kp U     &kp I   &kp LG(LS(LEFT))          &kp LCTRL &kp LALT          &kp LGUI     &kp RCTRL           &kp LG(LS(RIGHT)) &kp D   &kp H    &kp T   &kp N    &kp S   &kp MINUS
+&lsftcaps        &kp APOS &kp Q     &kp J    &kp K     &kp X                                       &kp LA(LCTRL)     &kp LA(LSFT)                                       &kp B   &kp M    &kp W   &kp V    &kp Z   &rsftcaps
+&to DVORAK_LAYER &dgrave  &kp GRAVE &kp LEFT &kp RIGHT                          &kp BSPC &kp DEL   &kp LA(LC(LSFT))  &kp LC(LSFT) &kp ENTER &kp SPACE                           &kp DOWN &kp UP  &kp FSLH &acaret &to DVORAK_LAYER
             >;
         };
 
