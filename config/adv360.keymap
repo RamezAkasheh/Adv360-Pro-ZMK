@@ -207,11 +207,11 @@ rsftcaps: rsft_caps {
 
         default_layer {
             bindings = <
-&kp EQUAL    &kp N1    &kp N2   &kp N3   &kp N4    &kp N5 &tog KEYPAD                                                                            &mo MOD_LAYER     &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp MINUS
-&kp TAB      &kp Q     &kp W    &kp E    &kp R     &kp T  &kp LG(LC(LEFT))                                                                       &kp LG(LC(RIGHT)) &kp Y  &kp U    &kp I     &kp O    &kp P    &kp BSLH
-&kp ESC      &kp A     &kp S    &kp D    &kp F     &kp G  &kp LG(LS(LEFT))          &kp LCTRL &kp LALT          &kp LGUI     &kp RCTRL           &kp LG(LS(RIGHT)) &kp H  &kp J    &kp K     &kp L    &kp SEMI &kp SQT
-&kp LSHFT    &kp Z     &kp X    &kp C    &kp V     &kp B                                      &kp LA(LCTRL)     &kp LA(LSFT)                                       &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-&to FN_LAYER &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                         &kp BSPC &kp DEL   &kp LA(LC(LSFT))  &kp LC(LSFT) &kp ENTER &kp SPACE                          &kp DOWN &kp UP    &kp LBKT &kp RBKT &to FN_LAYER
+&kp EQUAL    &kp N1    &kp N2   &kp N3   &kp N4    &kp N5 &tog KEYPAD                                                                         &mo MOD_LAYER &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp MINUS
+&kp TAB      &kp Q     &kp W    &kp E    &kp R     &kp T  &kp RA(RCTRL)                                                                       &kp RA(RCTRL) &kp Y  &kp U    &kp I     &kp O    &kp P    &kp BSLH
+&kp ESC      &kp A     &kp S    &kp D    &kp F     &kp G  &kp RALT               &kp LCTRL &kp LALT          &kp LGUI     &kp RCTRL           &kp RALT      &kp H  &kp J    &kp K     &kp L    &kp SEMI &kp SQT
+&kp LSHFT    &kp Z     &kp X    &kp C    &kp V     &kp B                                   &kp LA(LCTRL)     &kp LA(LSFT)                                   &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+&to FN_LAYER &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                      &kp BSPC &kp DEL   &kp LA(LC(LSFT))  &kp LC(LSFT) &kp ENTER &kp SPACE                      &kp DOWN &kp UP    &kp LBKT &kp RBKT &to FN_LAYER
             >;
         };
 
@@ -231,11 +231,11 @@ rsftcaps: rsft_caps {
 
         dvorak_layer {
           bindings = <
-&ppipe        &pkp_n1  &lkp_n2   &lkp_n3  &lkp_n4   &akp_n5 &tog KEYPAD                                                                            &mo MOD_LAYER     &ekp_n6 &rkp_n7  &rkp_n8 &rkp_n9  &skp_n0 &eprcnt
-&kp TAB       &kp SEMI &kp COMMA &kp DOT  &kp P     &kp Y   &kp LG(LC(LEFT))                                                                       &kp LG(LC(RIGHT)) &kp F   &kp G    &kp C   &kp R    &kp L   &bhash
-&kp ESC       &kp A    &kp O     &kp E    &kp U     &kp I   &kp LG(LS(LEFT))          &kp LCTRL &kp LALT          &kp LGUI     &kp RCTRL           &kp LG(LS(RIGHT)) &kp D   &kp H    &kp T   &kp N    &kp S   &kp MINUS
-&lsftcaps     &kp APOS &kp Q     &kp J    &kp K     &kp X                                       &kp LA(LCTRL)     &kp LA(LSFT)                                       &kp B   &kp M    &kp W   &kp V    &kp Z   &rsftcaps
-&to DVORAK_FN &dgrave  &kp GRAVE &kp LEFT &kp RIGHT                          &kp BSPC &kp DEL   &kp LA(LC(LSFT))  &kp LC(LSFT) &kp ENTER &kp SPACE                           &kp DOWN &kp UP  &kp FSLH &acaret &to DVORAK_FN
+&ppipe        &pkp_n1  &lkp_n2   &lkp_n3  &lkp_n4   &akp_n5 &tog KEYPAD                                                                         &mo MOD_LAYER &ekp_n6 &rkp_n7  &rkp_n8 &rkp_n9  &skp_n0 &eprcnt
+&kp TAB       &kp SEMI &kp COMMA &kp DOT  &kp P     &kp Y   &kp RA(RCTRL)                                                                       &kp RA(RCTRL) &kp F   &kp G    &kp C   &kp R    &kp L   &bhash
+&kp ESC       &kp A    &kp O     &kp E    &kp U     &kp I   &kp RALT               &kp LCTRL &kp LALT          &kp LGUI     &kp RCTRL           &kp RALT      &kp D   &kp H    &kp T   &kp N    &kp S   &kp MINUS
+&lsftcaps     &kp APOS &kp Q     &kp J    &kp K     &kp X                                    &kp LA(LCTRL)     &kp LA(LSFT)                                   &kp B   &kp M    &kp W   &kp V    &kp Z   &rsftcaps
+&to DVORAK_FN &dgrave  &kp GRAVE &kp LEFT &kp RIGHT                       &kp BSPC &kp DEL   &kp LA(LC(LSFT))  &kp LC(LSFT) &kp ENTER &kp SPACE                       &kp DOWN &kp UP  &kp FSLH &acaret &to DVORAK_FN
             >;
         };
 
@@ -243,11 +243,11 @@ rsftcaps: rsft_caps {
 
         dvorak_fn {
             bindings = <
-&kp F1           &kp F2   &kp F3    &kp F4   &kp F5    &kp F6  &tog KEYPAD                                                                            &mo MOD_LAYER     &kp F7  &kp F8   &kp F9  &kp F10  &kp F11 &kp F12
-&kp TAB          &kp SEMI &kp COMMA &kp DOT  &kp P     &kp Y   &kp LG(LC(LEFT))                                                                       &kp LG(LC(RIGHT)) &kp F   &kp G    &kp C   &kp R    &kp L   &bhash
-&kp ESC          &kp A    &kp O     &kp E    &kp U     &kp I   &kp LG(LS(LEFT))          &kp LCTRL &kp LALT          &kp LGUI     &kp RCTRL           &kp LG(LS(RIGHT)) &kp D   &kp H    &kp T   &kp N    &kp S   &kp MINUS
-&lsftcaps        &kp APOS &kp Q     &kp J    &kp K     &kp X                                       &kp LA(LCTRL)     &kp LA(LSFT)                                       &kp B   &kp M    &kp W   &kp V    &kp Z   &rsftcaps
-&to DVORAK_LAYER &dgrave  &kp GRAVE &kp LEFT &kp RIGHT                          &kp BSPC &kp DEL   &kp LA(LC(LSFT))  &kp LC(LSFT) &kp ENTER &kp SPACE                           &kp DOWN &kp UP  &kp FSLH &acaret &to DVORAK_LAYER
+&kp F1           &kp F2   &kp F3    &kp F4   &kp F5    &kp F6  &tog KEYPAD                                                                         &mo MOD_LAYER &kp F7  &kp F8   &kp F9  &kp F10  &kp F11 &kp F12
+&kp TAB          &kp SEMI &kp COMMA &kp DOT  &kp P     &kp Y   &kp RA(RCTRL)                                                                       &kp RA(RCTRL) &kp F   &kp G    &kp C   &kp R    &kp L   &bhash
+&kp ESC          &kp A    &kp O     &kp E    &kp U     &kp I   &kp RALT               &kp LCTRL &kp LALT          &kp LGUI     &kp RCTRL           &kp RALT      &kp D   &kp H    &kp T   &kp N    &kp S   &kp MINUS
+&lsftcaps        &kp APOS &kp Q     &kp J    &kp K     &kp X                                    &kp LA(LCTRL)     &kp LA(LSFT)                                   &kp B   &kp M    &kp W   &kp V    &kp Z   &rsftcaps
+&to DVORAK_LAYER &dgrave  &kp GRAVE &kp LEFT &kp RIGHT                       &kp BSPC &kp DEL   &kp LA(LC(LSFT))  &kp LC(LSFT) &kp ENTER &kp SPACE                       &kp DOWN &kp UP  &kp FSLH &acaret &to DVORAK_LAYER
             >;
         };
 
