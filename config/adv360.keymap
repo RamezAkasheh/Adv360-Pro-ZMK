@@ -142,6 +142,96 @@ skp_n0: star_kp_n0 {
     keep-mods = <(MOD_LGUI|MOD_RGUI|MOD_LALT|MOD_RALT|MOD_LCTL|MOD_RCTL|MOD_RSFT)>;
 };
 
+f2_n1: f2_n1 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "F2_n1";
+    #binding-cells = <0>;
+    bindings = <&kp F2>, <&kp N1>;
+    mods = <(MOD_RALT|MOD_RCTRL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+};
+
+f3_n2: f3_n2 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "F3_n2";
+    #binding-cells = <0>;
+    bindings = <&kp F3>, <&kp N2>;
+    mods = <(MOD_RALT|MOD_RCTRL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+};
+
+f4_n3: f4_n3 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "F4_n3";
+    #binding-cells = <0>;
+    bindings = <&kp F4>, <&kp N3>;
+    mods = <(MOD_RALT|MOD_RCTRL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+};
+
+f5_n4: f5_n4 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "F5_n4";
+    #binding-cells = <0>;
+    bindings = <&kp F5>, <&kp N4>;
+    mods = <(MOD_RALT|MOD_RCTRL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+};
+
+f6_n5: f6_n5 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "F6_n5";
+    #binding-cells = <0>;
+    bindings = <&kp F6>, <&kp N5>;
+    mods = <(MOD_RALT|MOD_RCTRL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+};
+
+f7_n6: f7_n6 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "F7_n6";
+    #binding-cells = <0>;
+    bindings = <&kp F7>, <&kp N6>;
+    mods = <(MOD_RALT|MOD_RCTRL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+};
+
+f8_n7: f8_n7 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "F8_n7";
+    #binding-cells = <0>;
+    bindings = <&kp F8>, <&kp N7>;
+    mods = <(MOD_RALT|MOD_RCTRL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+};
+
+f9_n8: f9_n8 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "F9_n8";
+    #binding-cells = <0>;
+    bindings = <&kp F9>, <&kp N8>;
+    mods = <(MOD_RALT|MOD_RCTRL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+};
+
+f10_n9: f10_n9 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "F10_n9";
+    #binding-cells = <0>;
+    bindings = <&kp F10>, <&kp N9>;
+    mods = <(MOD_RALT|MOD_RCTRL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+};
+
+f11_n0: f11_n0 {
+    compatible = "zmk,behavior-mod-morph";
+    label = "F11_n0";
+    #binding-cells = <0>;
+    bindings = <&kp F11>, <&kp N0>;
+    mods = <(MOD_RALT|MOD_RCTRL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+};
+
 eprcnt: excl_prcnt {
     compatible = "zmk,behavior-mod-morph";
     label = "excl_prcnt";
@@ -219,7 +309,7 @@ rsftcaps: rsft_caps {
 
         fn {
             bindings = <
-&kp F1            &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog KEYPAD                                              &mo MOD_LAYER &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
+&kp F1            &f2_n1 &f3_n2 &f4_n3 &f5_n4 &f6_n5 &tog KEYPAD                                              &mo MOD_LAYER &f7_n6 &f8_n7 &f9_n8 &f10_n9 &f11_n0 &kp F12
 &trans            &trans &trans &trans &trans &trans &trans                                                   &trans        &trans &trans &trans &trans  &trans  &trans
 &trans            &trans &trans &trans &trans &trans &trans             &trans &trans  &trans &kp LALT        &trans        &trans &trans &trans &trans  &trans  &trans
 &trans            &trans &trans &trans &trans &trans                           &trans  &trans                               &trans &trans &trans &trans  &trans  &trans
@@ -243,7 +333,7 @@ rsftcaps: rsft_caps {
 
         dvorak_fn {
             bindings = <
-&kp F1           &kp F2   &kp F3    &kp F4   &kp F5    &kp F6  &tog KEYPAD                                                                         &mo MOD_LAYER &kp F7  &kp F8   &kp F9  &kp F10  &kp F11 &kp F12
+&kp F1           &f2_n1   &f3_n2    &f4_n3   &f5_n4    &f6_n5  &tog KEYPAD                                                                         &mo MOD_LAYER &f7_n6  &f8_n7   &f9_n8  &f10_n9  &f11_n0 &kp F12
 &kp TAB          &kp SEMI &kp COMMA &kp DOT  &kp P     &kp Y   &kp RA(RCTRL)                                                                       &kp RA(RCTRL) &kp F   &kp G    &kp C   &kp R    &kp L   &bhash
 &kp ESC          &kp A    &kp O     &kp E    &kp U     &kp I   &kp RALT               &kp LCTRL &kp LALT          &kp LGUI     &kp RCTRL           &kp RALT      &kp D   &kp H    &kp T   &kp N    &kp S   &kp MINUS
 &lsftcaps        &kp APOS &kp Q     &kp J    &kp K     &kp X                                    &kp LA(LCTRL)     &kp LA(LSFT)                                   &kp B   &kp M    &kp W   &kp V    &kp Z   &rsftcaps
