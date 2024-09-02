@@ -147,8 +147,8 @@ f2_n1: f2_n1 {
     label = "F2_n1";
     #binding-cells = <0>;
     bindings = <&kp F2>, <&kp N1>;
-    mods = <(MOD_RALT|MOD_RCTRL)>;
-    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+    mods = <(MOD_RALT|MOD_RCTL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTL)>;
 };
 
 f3_n2: f3_n2 {
@@ -156,8 +156,8 @@ f3_n2: f3_n2 {
     label = "F3_n2";
     #binding-cells = <0>;
     bindings = <&kp F3>, <&kp N2>;
-    mods = <(MOD_RALT|MOD_RCTRL)>;
-    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+    mods = <(MOD_RALT|MOD_RCTL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTL)>;
 };
 
 f4_n3: f4_n3 {
@@ -165,8 +165,8 @@ f4_n3: f4_n3 {
     label = "F4_n3";
     #binding-cells = <0>;
     bindings = <&kp F4>, <&kp N3>;
-    mods = <(MOD_RALT|MOD_RCTRL)>;
-    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+    mods = <(MOD_RALT|MOD_RCTL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTL)>;
 };
 
 f5_n4: f5_n4 {
@@ -174,8 +174,8 @@ f5_n4: f5_n4 {
     label = "F5_n4";
     #binding-cells = <0>;
     bindings = <&kp F5>, <&kp N4>;
-    mods = <(MOD_RALT|MOD_RCTRL)>;
-    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+    mods = <(MOD_RALT|MOD_RCTL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTL)>;
 };
 
 f6_n5: f6_n5 {
@@ -183,8 +183,8 @@ f6_n5: f6_n5 {
     label = "F6_n5";
     #binding-cells = <0>;
     bindings = <&kp F6>, <&kp N5>;
-    mods = <(MOD_RALT|MOD_RCTRL)>;
-    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+    mods = <(MOD_RALT|MOD_RCTL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTL)>;
 };
 
 f7_n6: f7_n6 {
@@ -192,8 +192,8 @@ f7_n6: f7_n6 {
     label = "F7_n6";
     #binding-cells = <0>;
     bindings = <&kp F7>, <&kp N6>;
-    mods = <(MOD_RALT|MOD_RCTRL)>;
-    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+    mods = <(MOD_RALT|MOD_RCTL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTL)>;
 };
 
 f8_n7: f8_n7 {
@@ -201,8 +201,8 @@ f8_n7: f8_n7 {
     label = "F8_n7";
     #binding-cells = <0>;
     bindings = <&kp F8>, <&kp N7>;
-    mods = <(MOD_RALT|MOD_RCTRL)>;
-    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+    mods = <(MOD_RALT|MOD_RCTL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTL)>;
 };
 
 f9_n8: f9_n8 {
@@ -210,8 +210,8 @@ f9_n8: f9_n8 {
     label = "F9_n8";
     #binding-cells = <0>;
     bindings = <&kp F9>, <&kp N8>;
-    mods = <(MOD_RALT|MOD_RCTRL)>;
-    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+    mods = <(MOD_RALT|MOD_RCTL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTL)>;
 };
 
 f10_n9: f10_n9 {
@@ -219,8 +219,8 @@ f10_n9: f10_n9 {
     label = "F10_n9";
     #binding-cells = <0>;
     bindings = <&kp F10>, <&kp N9>;
-    mods = <(MOD_RALT|MOD_RCTRL)>;
-    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+    mods = <(MOD_RALT|MOD_RCTL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTL)>;
 };
 
 f11_n0: f11_n0 {
@@ -228,8 +228,8 @@ f11_n0: f11_n0 {
     label = "F11_n0";
     #binding-cells = <0>;
     bindings = <&kp F11>, <&kp N0>;
-    mods = <(MOD_RALT|MOD_RCTRL)>;
-    keep-mods = <(MOD_RALT|MOD_RCTRL)>;
+    mods = <(MOD_RALT|MOD_RCTL)>;
+    keep-mods = <(MOD_RALT|MOD_RCTL)>;
 };
 
 eprcnt: excl_prcnt {
