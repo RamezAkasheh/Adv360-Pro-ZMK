@@ -52,6 +52,15 @@ ppipe: pipe_pipe {
     mods = <(MOD_LSFT|MOD_RSFT)>;
 };
 
+pinsert: pipe_insert {
+    compatible = "zmk,behavior-mod-morph";
+    label = "pipe_pipe";
+    #binding-cells = <0>;
+    bindings = <&kp PIPE>, <&kp INSERT>;
+    mods = <(MOD_LSFT|MOD_RSFT|MOD_RALT|MOD_RCTL)>;
+    keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_RALT|MOD_RCTL)>;
+};
+
 pkp_n1: plus_kp_n1 {
     compatible = "zmk,behavior-mod-morph";
     label = "plus_kp_n1";
@@ -321,7 +330,7 @@ rsftcaps: rsft_caps {
 
         dvorak_layer {
           bindings = <
-&ppipe        &pkp_n1  &lkp_n2   &lkp_n3  &lkp_n4   &akp_n5 &tog KEYPAD                                                                         &mo MOD_LAYER &ekp_n6 &rkp_n7  &rkp_n8 &rkp_n9  &skp_n0 &eprcnt
+&pinsert      &pkp_n1  &lkp_n2   &lkp_n3  &lkp_n4   &akp_n5 &tog KEYPAD                                                                         &mo MOD_LAYER &ekp_n6 &rkp_n7  &rkp_n8 &rkp_n9  &skp_n0 &eprcnt
 &kp TAB       &kp SEMI &kp COMMA &kp DOT  &kp P     &kp Y   &kp RA(RCTRL)                                                                       &kp RA(RCTRL) &kp F   &kp G    &kp C   &kp R    &kp L   &bhash
 &kp ESC       &kp A    &kp O     &kp E    &kp U     &kp I   &kp RALT               &kp LCTRL &kp LALT          &kp LGUI     &kp RCTRL           &kp RALT      &kp D   &kp H    &kp T   &kp N    &kp S   &kp MINUS
 &lsftcaps     &kp APOS &kp Q     &kp J    &kp K     &kp X                                    &kp LA(LCTRL)     &kp LA(LSFT)                                   &kp B   &kp M    &kp W   &kp V    &kp Z   &rsftcaps
